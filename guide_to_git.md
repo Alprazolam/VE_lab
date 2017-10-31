@@ -1,4 +1,4 @@
-#General ideas about git
+# General ideas about git
 [Some good (also long) stuff to read.](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)  
 
 Some points from my point of view:
@@ -7,7 +7,7 @@ Some points from my point of view:
 existing on remote server. You will need to explicity "push" your a new branch to remote server if you wish to do so.
 * <b>Do not play with master branch.</b> It is supposed to be correctly built/run all the time.
 
-#Start with some git commands
+# Start with some git commands
 Before starting. [Look here always.](https://git-scm.com/docs)
 
 ```
@@ -34,7 +34,7 @@ git checkout -B <branch_name>
 You will switch to the branch designated by <i>branch_name</i>. With ```-B``` you will create <i>branch_name</i> if it does not exist.
 
 
-#Typical workflow
+# Typical workflow
 Assume you have made some changes to the existing files on a branch. (Assume nobody updates anything on remote in the mean time)
 ```
 git add <files you changed>
@@ -48,7 +48,7 @@ of people. You can always (literally) type ```:wq``` to quit in this case. There
 recommend ```nano``` for modern users.
 * Then you push to remote server.
 
-#More to check
+# More to check
 * If someone has changed the same branch or if you are merging branches (it is bad to use merge of course). You might get conflits. [Read here how 
 to resolve conflicts.](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 * Try to use ```rebase``` all the time instead of ```merge```.
