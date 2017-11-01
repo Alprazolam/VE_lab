@@ -13,7 +13,8 @@ Before starting. [Look here always.](https://git-scm.com/docs)
 ```
 git clone <address>
 ```
-This will clone the file tree from the remote address you provided. 
+This will clone the file tree from the remote address you provided, find the address on github by pressing the green <b>Clone or download</b> 
+button on the upper right hand side of main repo page.   
 You might need your git user name and password for private repos (like this one).
 <i>Optionally you can set up RSA keys at your settings page. Read more [here](https://help.github.com/articles/connecting-to-github-with-ssh/).</i>
 
@@ -52,3 +53,21 @@ recommend ```nano``` for modern users.
 * If someone has changed the same branch or if you are merging branches (it is bad to use merge of course). You might get conflits. [Read here how 
 to resolve conflicts.](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 * Try to use ```rebase``` all the time instead of ```merge```.
+
+# Git LFS
+It is short for Git Large File Support and it is suppose to optimize git for large files in project. This project uses Git LFS on 2 files 
+estimated 77.21 Mb in total (It is configured to track all .exr files). Currently to pull from remote those files you will need to [download 
+Git LFS from here](https://git-lfs.github.com/).
+
+## Installation (Windows)
+* Execute the .exe file and install.
+* Open Git bash under the installation directory (the one with a git-lfs.exe) and use
+```
+git lfs install
+``` 
+
+## Usage
+* After normally cloned the repo, locate the local repo directory and use
+```
+git lfs pull
+```
