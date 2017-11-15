@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserPointer : MonoBehaviour {
+public class LaserPointer : MonoBehaviour
+{
 
 
     public Transform camRigTransform;    // The position of cameraRig center
@@ -26,7 +27,8 @@ public class LaserPointer : MonoBehaviour {
 
     private SteamVR_Controller.Device Controller
     {
-        get{
+        get
+        {
             return SteamVR_Controller.Input((int)trackedObj.index);
         }
     }
@@ -34,7 +36,7 @@ public class LaserPointer : MonoBehaviour {
     private void Start()
     {
         //initialize laser
-        laser_ins = Instantiate(laserPrefab);    
+        laser_ins = Instantiate(laserPrefab);
         laserTransform = laser_ins.transform;
 
         //initialize reticle
@@ -49,7 +51,8 @@ public class LaserPointer : MonoBehaviour {
 
     private void Update()
     {
-        if (Controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad)){
+        if (Controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
+        {
             RaycastHit hitPoint;
 
             bool hit = Physics.Raycast(trackedObj.transform.position, transform.forward, out hitPoint, 100, teleportMask);
@@ -60,22 +63,27 @@ public class LaserPointer : MonoBehaviour {
                 reticleTransform.position = hitPos + teleportOffset;
 
                 ifTeleport = true;
-            }else {      // if there is no intersection with teleportMask, set laser and reticle as false
+            }
+            else
+            {      // if there is no intersection with teleportMask, set laser and reticle as false
                 laser_ins.SetActive(false);
                 reticle_ins.SetActive(false);
             }
         }
-        else {           // if the touchPad is not pressed
+        else
+        {           // if the touchPad is not pressed
             laser_ins.SetActive(false);
             reticle_ins.SetActive(false);
         }
 
-        if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad) && ifTeleport) {
+        if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad) && ifTeleport)
+        {
             teleportation();
         }
     }
 
-    private void displayLaser(RaycastHit hitPoint) {
+    private void displayLaser(RaycastHit hitPoint)
+    {
         laser_ins.SetActive(true);
         laserTransform.position = Vector3.Lerp(trackedObj.transform.position, hitPos, .5f);
         laserTransform.LookAt(hitPos);
@@ -83,7 +91,8 @@ public class LaserPointer : MonoBehaviour {
         reticle_ins.SetActive(true);
     }
 
-    private void teleportation() {
+    private void teleportation()
+    {
         reticle_ins.SetActive(false);
         Vector3 offset = camRigTransform.position - headTransform.position;
         offset.y = 0;
