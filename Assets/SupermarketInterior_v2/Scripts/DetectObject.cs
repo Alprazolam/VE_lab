@@ -15,8 +15,9 @@ public class DetectObject : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider other)
+	IEnumerator OnTriggerEnter(Collider other)
 	{
+		yield return new WaitForSecondsRealtime(1); //delay so object can fall into the cart
 		other.transform.parent = cart.transform;
 	}
 }
