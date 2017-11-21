@@ -10,6 +10,7 @@ public class LaserPointer : MonoBehaviour
     public Transform headTransform;         // The position of player's head
     public Vector3 teleportOffset;   // Offset from the floor for the reticle to avoid z-fighting
     public LayerMask teleportMask;  // Mask to filter out areas where teleports are allowed
+    public LayerMask cantMoveMask;  // Mask to filter out areas where teleports are not allowed
 
     public GameObject laserPrefab;
     private GameObject laser_ins;   // laser instance
@@ -56,7 +57,8 @@ public class LaserPointer : MonoBehaviour
             RaycastHit hitPoint;
 
             bool hit = Physics.Raycast(trackedObj.transform.position, transform.forward, out hitPoint, 100, teleportMask);
-            if (hit)     // if there is a intersection with teleportMask, show the laser and reticle
+            bool hitShelf = Physics.Raycast(trackedObj.transform.position, transform.forward, out hitPoint, 100, cantMoveMask);
+            if (hit && !hitShelf)     // if there is a intersection with teleportMask and without shelf, show the laser and reticle
             {
                 hitPos = hitPoint.point;
                 displayLaser(hitPoint);
@@ -79,6 +81,11 @@ public class LaserPointer : MonoBehaviour
         if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad) && ifTeleport)
         {
             teleportation();
+        }
+
+        if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.ApplicationMenu))
+        {
+            ControllerTutorial.tutorialVisible = !ControllerTutorial.tutorialVisible;
         }
     }
 
