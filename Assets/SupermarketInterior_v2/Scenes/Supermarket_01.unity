@@ -113,39 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &15233221
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &44697107
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 67169972}
   - component: {fileID: 67169973}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101821023}
   - component: {fileID: 101821024}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 160632923}
   - component: {fileID: 160632924}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 181213393}
   - component: {fileID: 181213394}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192040788}
   - component: {fileID: 192040789}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -639,7 +606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196883714}
   - component: {fileID: 196883715}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390134905}
   - component: {fileID: 390134906}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,7 +688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 475953117}
   - component: {fileID: 475953118}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 533255569}
   - component: {fileID: 533255570}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,7 +770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536584009}
   - component: {fileID: 536584010}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536612587}
   - component: {fileID: 536612588}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -885,7 +852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 552592252}
   - component: {fileID: 552592253}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637718861}
   - component: {fileID: 637718862}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 732425827}
   - component: {fileID: 732425828}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1008,7 +975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744901550}
   - component: {fileID: 744901551}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1106,7 +1073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 922883639}
   - component: {fileID: 922883640}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1147,7 +1114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 954147717}
   - component: {fileID: 954147718}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1188,7 +1155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035749829}
   - component: {fileID: 1035749830}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,7 +1196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1106039351}
   - component: {fileID: 1106039352}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1316,7 +1283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211140291}
   - component: {fileID: 1211140292}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1357,7 +1324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1232424838}
   - component: {fileID: 1232424839}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1478,7 +1445,7 @@ Transform:
   - {fileID: 44697109}
   - {fileID: 1277158001}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1348766221
 GameObject:
@@ -1489,7 +1456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1348766222}
   - component: {fileID: 1348766223}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1530,7 +1497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1359106778}
   - component: {fileID: 1359106779}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1562,6 +1529,80 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!21 &1379644059
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1403058136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1403058137}
+  - component: {fileID: 1403058138}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403058137
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403058136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.22, y: 2.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2076622872}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1403058138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403058136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 28, y: 0.05, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1419243731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419243732}
   - component: {fileID: 1419243733}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1603,172 +1644,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1464880677
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1464880678}
-  - component: {fileID: 1464880679}
-  m_Layer: 2
-  m_Name: teleportBlocker2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1464880678
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1464880677}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.02, y: 2.706, z: -4.16}
-  m_LocalScale: {x: 3.7161233, y: 1.15534, z: 6.03096}
-  m_Children: []
-  m_Father: {fileID: 1277158001}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1464880679
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1464880677}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1494673759
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1494673760}
-  - component: {fileID: 1494673761}
-  m_Layer: 2
-  m_Name: teleportBlocker12
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1494673760
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1494673759}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.47, y: 5.95, z: -4.47}
-  m_LocalScale: {x: 1.49544, y: 8.00451, z: 1.57984}
-  m_Children: []
-  m_Father: {fileID: 1277158001}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1494673761
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1494673759}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &1558651796
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1566936869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1566936870}
-  - component: {fileID: 1566936871}
-  m_Layer: 2
-  m_Name: teleportBlocker26
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1566936870
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1566936869}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9, y: 3.414, z: -32.89}
-  m_LocalScale: {x: 2.5864298, y: 2.47908, z: 10.42355}
-  m_Children: []
-  m_Father: {fileID: 1277158001}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1566936871
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1566936869}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!43 &1655473070
+--- !u!43 &1435232290
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1896,6 +1772,171 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &1464880677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1464880678}
+  - component: {fileID: 1464880679}
+  m_Layer: 11
+  m_Name: teleportBlocker2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1464880678
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464880677}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.02, y: 2.706, z: -4.16}
+  m_LocalScale: {x: 3.7161233, y: 1.15534, z: 6.03096}
+  m_Children: []
+  m_Father: {fileID: 1277158001}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1464880679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464880677}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1494673759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1494673760}
+  - component: {fileID: 1494673761}
+  m_Layer: 11
+  m_Name: teleportBlocker12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1494673760
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494673759}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.47, y: 5.95, z: -4.47}
+  m_LocalScale: {x: 1.49544, y: 8.00451, z: 1.57984}
+  m_Children: []
+  m_Father: {fileID: 1277158001}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1494673761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494673759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1558651796
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1566936869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1566936870}
+  - component: {fileID: 1566936871}
+  m_Layer: 11
+  m_Name: teleportBlocker26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1566936870
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1566936869}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.9, y: 3.414, z: -32.89}
+  m_LocalScale: {x: 2.5864298, y: 2.47908, z: 10.42355}
+  m_Children: []
+  m_Father: {fileID: 1277158001}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1566936871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1566936869}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1782238258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,7 +1946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1782238259}
   - component: {fileID: 1782238260}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: teleportBlocker24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2110,11 +2151,11 @@ Prefab:
     - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 15233221}
+      objectReference: {fileID: 1379644059}
     - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1655473070}
+      objectReference: {fileID: 1435232290}
     - target: {fileID: 402434, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_RootOrder
       value: 1
@@ -2313,6 +2354,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &2076622871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2076622872}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2076622872
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076622871}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1403058137}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2146019366
 Prefab:
   m_ObjectHideFlags: 0
