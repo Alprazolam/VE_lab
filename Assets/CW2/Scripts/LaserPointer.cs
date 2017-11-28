@@ -50,7 +50,7 @@ public class LaserPointer : MonoBehaviour
         trackedObj = GetComponent<SteamVR_TrackedObject>();
     }
 
-    private void Update()
+    private void Update() // Called once a frame.
     {
         if (Controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
@@ -58,6 +58,9 @@ public class LaserPointer : MonoBehaviour
 
             bool hit = Physics.Raycast(trackedObj.transform.position, transform.forward, out hitPoint, 100, teleportMask);
             bool hitShelf = Physics.Raycast(trackedObj.transform.position, transform.forward, out hitPoint, 100, cantMoveMask);
+
+            ifTeleport = false; // Should disable teleporting outside of the range since this is called once a frame.
+
             if (hit && !hitShelf)     // if there is a intersection with teleportMask and without shelf, show the laser and reticle
             {
                 hitPos = hitPoint.point;
@@ -78,6 +81,7 @@ public class LaserPointer : MonoBehaviour
                 reticle_ins.SetActive(false);
                 ifTeleport = false;
             }
+            
         }
         else
         {           // if the touchPad is not pressed
@@ -85,7 +89,7 @@ public class LaserPointer : MonoBehaviour
             reticle_ins.SetActive(false);
         }
 
-        if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad) && ifTeleport)
+        if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad) && ifTeleport == true)
         {
             teleportation();
         }
