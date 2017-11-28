@@ -70,7 +70,9 @@ public class ControllerGrabObject : MonoBehaviour {
 	private void GrabObject() {
 		// 1
 		objectInHand = collidingObject;
-		objectInHand.transform.parent = null;
+		if (objectInHand.transform.parent != null) {
+			objectInHand.transform.parent = null;  //remove the child dependency
+		}
 		collidingObject = null;
 		// 2
 		var joint = AddFixedJoint();

@@ -17,7 +17,10 @@ public class DetectObject : MonoBehaviour {
 
 	IEnumerator OnTriggerEnter(Collider other)
 	{
-		yield return new WaitForSecondsRealtime(1); //delay so object can fall into the cart
-		other.transform.parent = cart.transform;
+		if (other.gameObject.layer == 9) //check if object is grabbable
+		{
+			yield return new WaitForSecondsRealtime(1); //delay so object can fall down
+			other.transform.parent = cart.transform;
+		}
 	}
 }
