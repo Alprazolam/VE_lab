@@ -25,6 +25,9 @@ public class LaserPointer : MonoBehaviour
 
     private SteamVR_TrackedObject trackedObj;
 
+    //get cart gameobject
+    private GameObject Cart;
+
 
     private SteamVR_Controller.Device Controller
     {
@@ -48,6 +51,7 @@ public class LaserPointer : MonoBehaviour
     private void Awake()
     {
         trackedObj = GetComponent<SteamVR_TrackedObject>();
+        Cart = GameObject.Find("mesh_cart_01");
     }
 
     private void Update() // Called once a frame.
@@ -115,6 +119,7 @@ public class LaserPointer : MonoBehaviour
         Vector3 offset = camRigTransform.position - headTransform.position;
         offset.y = 0;
         camRigTransform.position = hitPos + offset;
+        Cart.transform.position = hitPos;
         ifTeleport = false;
     }
 
