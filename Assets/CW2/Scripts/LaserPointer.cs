@@ -100,11 +100,13 @@ public class LaserPointer : MonoBehaviour
 			teleportation();
         }
 
+        /*
         if (Controller.GetPress(SteamVR_Controller.ButtonMask.ApplicationMenu))
         {
 			UCL.COMPGV07.Logging.KeyDown();
 			ControllerTutorial.tutorialVisible = !ControllerTutorial.tutorialVisible;
 		}
+        */
 	}
 
     private void displayLaser(RaycastHit hitPoint)
