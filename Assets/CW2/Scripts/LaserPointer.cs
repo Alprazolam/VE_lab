@@ -76,14 +76,16 @@ public class LaserPointer : MonoBehaviour
             }
             else if (!hit && hitShelf)
             {
-                displayLaser(hitPoint);
+                //displayLaser(hitPoint);
                 reticle_ins.SetActive(false);
+                laser_ins.SetActive(false);
                 ifTeleport = false;
             }
             else
             {      // if there is no intersection with teleportMask, set laser and reticle as false
-                displayLaser(hitPoint);
+                //displayLaser(hitPoint);
                 reticle_ins.SetActive(false);
+                laser_ins.SetActive(false);
                 ifTeleport = false;
             }
             
