@@ -2,24 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DetectObject : MonoBehaviour {
+public class DetectObject : MonoBehaviour
+{
 	private BoxCollider cart;
 
-	// initialization
 	void Start ()
 	{
 		cart = GetComponent<BoxCollider>();
 	}
 	
-	void FixedUpdate () {
-		
-	}
+	void Update () { }
 
 	void OnTriggerEnter(Collider other)
     {
-		if (other.gameObject.layer == 9) //check if object is grabbable
+		if (other.gameObject.layer == 9) // Check if object is grabbable
 		{
-			other.transform.parent = cart.transform;
+			other.transform.parent = cart.transform; // Make an object inside a cart its child
 		}
 	}
 
@@ -27,8 +25,7 @@ public class DetectObject : MonoBehaviour {
     {
         if (other.gameObject.layer == 9)
         {
-            other.transform.parent = null;
+            other.transform.parent = null; // Break the relationship when the object is outside the cart
         }
     }
-
 }
