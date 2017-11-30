@@ -58,7 +58,8 @@ public class LaserPointer : MonoBehaviour
     {
         if (Controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
-            RaycastHit hitPoint;
+			UCL.COMPGV07.Logging.KeyDown();
+			RaycastHit hitPoint;
 
             bool hit = Physics.Raycast(trackedObj.transform.position, transform.forward, out hitPoint, 100, teleportMask);
             bool hitShelf = Physics.Raycast(trackedObj.transform.position, transform.forward, out hitPoint, 100, cantMoveMask);
@@ -95,14 +96,16 @@ public class LaserPointer : MonoBehaviour
 
         if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad) && ifTeleport == true)
         {
-            teleportation();
+			UCL.COMPGV07.Logging.KeyDown();
+			teleportation();
         }
 
-        if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.ApplicationMenu))
+        if (Controller.GetPress(SteamVR_Controller.ButtonMask.ApplicationMenu))
         {
-            ControllerTutorial.tutorialVisible = !ControllerTutorial.tutorialVisible;
-        }
-    }
+			UCL.COMPGV07.Logging.KeyDown();
+			ControllerTutorial.tutorialVisible = !ControllerTutorial.tutorialVisible;
+		}
+	}
 
     private void displayLaser(RaycastHit hitPoint)
     {

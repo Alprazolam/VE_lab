@@ -15,11 +15,10 @@ public class DetectObject : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider other) //IEnumerator
+	void OnTriggerEnter(Collider other)
     {
 		if (other.gameObject.layer == 9) //check if object is grabbable
 		{
-			//yield return new WaitForSecondsRealtime(1); //delay so object can fall down
 			other.transform.parent = cart.transform;
 		}
 	}

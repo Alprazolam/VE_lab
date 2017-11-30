@@ -27,6 +27,7 @@ public class ControllerGrabObject : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Controller.GetHairTriggerDown()) {
+			UCL.COMPGV07.Logging.KeyDown();
 			if (collidingObject) {
 				GrabObject();
 			}
@@ -34,6 +35,7 @@ public class ControllerGrabObject : MonoBehaviour {
 
 		// 2
 		if (Controller.GetHairTriggerUp()) {
+			UCL.COMPGV07.Logging.KeyDown();
 			if (objectInHand) {
 				ReleaseObject();
 			}
@@ -70,9 +72,9 @@ public class ControllerGrabObject : MonoBehaviour {
 	private void GrabObject() {
 		// 1
 		objectInHand = collidingObject;
-		if (objectInHand.transform.parent != null) {
-			objectInHand.transform.parent = null;  //remove the child dependency
-		}
+		//if (objectInHand.transform.parent != null) {
+		//	objectInHand.transform.parent = null;  //remove the child dependency
+		//}
 		collidingObject = null;
 		// 2
 		var joint = AddFixedJoint();
