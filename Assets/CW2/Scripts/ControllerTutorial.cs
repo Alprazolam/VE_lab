@@ -57,7 +57,7 @@ public class ControllerTutorial : MonoBehaviour {
         if (Controller.GetPress(SteamVR_Controller.ButtonMask.ApplicationMenu) && tutorial == true)
         {
             UCL.COMPGV07.Logging.KeyDown();
-            ControllerTutorial.tutorialVisible = !ControllerTutorial.tutorialVisible;
+            tutorialVisible = !tutorialVisible;
             tutorial = false;
         }
 
