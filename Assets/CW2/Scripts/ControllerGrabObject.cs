@@ -35,7 +35,6 @@ public class ControllerGrabObject : MonoBehaviour {
 
 		// 2
 		if (Controller.GetHairTriggerUp()) {
-			UCL.COMPGV07.Logging.KeyDown();
 			if (objectInHand) {
 				ReleaseObject();
 			}
