@@ -99,6 +99,13 @@ namespace UCL.COMPGV07
         private static Logging singleton;
         private FileStream file;
 
+		void Awake()
+		{
+			Head = GameObject.Find("Camera (head)");
+			Playspace = GameObject.Find ("[CameraRig]");
+			GroupNumber = 7;
+		}
+
         // Use this for initialization
         void Start()
         {
