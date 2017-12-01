@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//https://www.raywenderlich.com/149239/htc-vive-tutorial-unity
+
 public class LaserPointer : MonoBehaviour
 {
     public Transform camRigTransform;    // cameraRig position
@@ -69,13 +71,6 @@ public class LaserPointer : MonoBehaviour
                 reticleTransform.position = hitPos + teleportOffset;
 
                 ifTeleport = true;
-            }
-            else if (!hit && hitShelf) // ************GET RID OF?***********
-            {
-                //DisplayLaser(hitPoint);
-                reticle_ins.SetActive(false);
-                laser_ins.SetActive(false);
-                ifTeleport = false;
             }
             else // If there is no intersection with teleportMask, set laser and reticle as false
             {

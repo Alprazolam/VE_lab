@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//https://www.raywenderlich.com/149239/htc-vive-tutorial-unity
+
 public class ControllerGrabObject : MonoBehaviour
 {
 	private SteamVR_TrackedObject trackedObj;
@@ -21,7 +23,6 @@ public class ControllerGrabObject : MonoBehaviour
 
 	void Start () { }
 
-	// Called once a frame
 	void Update ()
 	{
 		if (Controller.GetHairTriggerDown())
@@ -95,7 +96,7 @@ public class ControllerGrabObject : MonoBehaviour
 			GetComponent<FixedJoint>().connectedBody = null;
 			Destroy(GetComponent<FixedJoint>());
 
-			objectInHand.GetComponent<Rigidbody>().velocity = Controller.velocity; // Assign released object velocity of the hand
+			objectInHand.GetComponent<Rigidbody>().velocity = Controller.velocity; 
 			objectInHand.GetComponent<Rigidbody>().angularVelocity = Controller.angularVelocity;
 		}
 
