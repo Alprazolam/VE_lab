@@ -34,6 +34,8 @@ public class FPSPick : MonoBehaviour {
             {
                 dragging.transform.position = ray.origin + (ray.direction * distance);
             }
+
+            UCL.COMPGV07.Logging.KeyDown();
         }
 
         if (Input.GetMouseButtonUp(0))
