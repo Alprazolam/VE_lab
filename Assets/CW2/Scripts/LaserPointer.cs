@@ -28,6 +28,8 @@ public class LaserPointer : MonoBehaviour
     private SteamVR_TrackedObject trackedObj;
     private GameObject Cart;    // Get cart object
 
+    private bool teleported;
+
 
     private SteamVR_Controller.Device Controller
     {
@@ -47,6 +49,7 @@ public class LaserPointer : MonoBehaviour
 
     private void Awake()
     {
+        teleported = false;
         trackedObj = GetComponent<SteamVR_TrackedObject>();
         Cart = GameObject.Find("mesh_cart_01");
     }
@@ -56,7 +59,7 @@ public class LaserPointer : MonoBehaviour
     {
         if (Controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
-			UCL.COMPGV07.Logging.KeyDown();
+            UCL.COMPGV07.Logging.KeyDown();
 			RaycastHit hitPoint;
 
             bool hit = Physics.Raycast(trackedObj.transform.position, transform.forward, out hitPoint, 100, teleportMask);
@@ -89,7 +92,12 @@ public class LaserPointer : MonoBehaviour
 
         if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad) && ifTeleport == true)
         {
-			Teleportation();
+            if (!teleported)
+            {
+                teleported = true;
+                GameObject.Find("New Text").GetComponent<MeshRenderer>().enabled = false;
+            }
+            Teleportation();
         }
 	}
 
